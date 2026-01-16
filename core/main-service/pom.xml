@@ -121,12 +121,6 @@
             <scope>compile</scope>
         </dependency>
 
-        <!-- ParameterObject-->
-<!--        <dependency>-->
-<!--            <groupId>org.springdoc</groupId>-->
-<!--            <artifactId>springdoc-openapi-ui</artifactId>-->
-<!--        </dependency>-->
-
     </dependencies>
 
 

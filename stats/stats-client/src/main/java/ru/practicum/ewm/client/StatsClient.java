@@ -53,12 +53,8 @@ public class StatsClient {
 
     public List<ViewStatsDto> getStats(String start, String end, String[] uris, boolean unique) {
 
-        log.info("вошли в getStats:");
+        log.info("вошли в getStats: start={}, end={}, uris={}, unique={}", start, end, uris, unique);
         String baseUrl = getBaseUrl();
-        log.trace("метод getStats: baseUrl={}", baseUrl);
-        log.trace("метод getStats: uris={}", uris);
-        log.trace("метод getStats: start={}", start);
-        log.trace("метод getStats: end={}", end);
         String startEncoded = start.replace(" ", "+");
         String endEncoded = end.replace(" ", "+");
         URI fullUrl = UriComponentsBuilder
